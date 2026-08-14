@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The learning and development journey of Yusuf Xasan — computer science education, web development, Git & GitHub, and future goals.">
+  <meta name="author" content="Yusuf Xasan">
+  <title>Journey — Yusuf Xasan</title>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%238b5cf6'/%3E%3Ctext x='50' y='70' font-size='55' font-family='monospace' font-weight='bold' text-anchor='middle' fill='white'%3EYX%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="../index.html" class="nav-logo" aria-label="Yusuf Xasan — home">YX<span class="nav-logo-dot">.</span></a>
+
+      <ul class="nav-list" id="nav-list">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="journey.html" class="nav-link active" aria-current="page">Journey</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="contact.html" class="btn btn-primary nav-cta">Hire Me</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-list">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page hero -->
+    <section class="page-hero" id="top">
+      <div class="container page-hero-inner">
+        <p class="page-kicker reveal">Journey</p>
+        <h1 class="page-hero-title reveal">Learning &amp; development</h1>
+        <p class="page-hero-sub reveal">
+          No fake job titles here — just the honest milestones of a Computer Science student
+          turning curiosity into capability, one commit at a time.
+        </p>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section">
+      <div class="container">
+        <div class="journey-timeline">
+          <!-- 1 -->
+          <article class="journey-item reveal">
+            <p class="journey-period">Present</p>
+            <h2 class="journey-title">B.Sc. Computer Science</h2>
+            <p class="journey-text">
+              University of Hargeisa — Faculty of Engineering and Computing. Studying computer
+              science fundamentals: programming, algorithms, databases, and the theory that
+              makes software work.
+            </p>
+          </article>
+
+          <!-- 2 -->
+          <article class="journey-item reveal">
+            <p class="journey-period">Completed</p>
+            <h2 class="journey-title">High School Certificate</h2>
+            <p class="journey-text">
+              Salama Secondary School. Completed secondary education and earned the High School
+              Certificate — where my interest in technology first started to grow.
+            </p>
+          </article>
+
+          <!-- 3 -->
+          <article class="journey-item reveal">
+            <p class="journey-period">Self-taught</p>
+            <h2 class="journey-title">Web Development Foundations</h2>
+            <p class="journey-text">
+              Learned HTML5, CSS3, and JavaScript through structured courses and hands-on
+              projects — from my first "Hello World" page to responsive layouts, components,
+              and DOM manipulation.
+            </p>
+          </article>
+
+          <!-- 4 -->
+          <article class="journey-item reveal">
+            <p class="journey-period">Bootcamp</p>
+            <h2 class="journey-title">Git &amp; GitHub</h2>
+            <p class="journey-text">
+              Completed a Git and GitHub bootcamp covering version control, branching,
+              merging, and collaboration workflows. This very site is a product of that
+              practice — every section built on its own feature branch.
+            </p>
+          </article>
+
+          <!-- 5 -->
+          <article class="journey-item reveal">
+            <p class="journey-period">Practice</p>
+            <h2 class="journey-title">Building Projects</h2>
+            <p class="journey-text">
+              Started turning lessons into real things: this multi-page portfolio, a school
+              management system, an e-commerce storefront, a task manager, and a real-time
+              chat app — each one adding new tools to my belt.
+            </p>
+          </article>
+
+          <!-- 6 -->
+          <article class="journey-item reveal">
+            <p class="journey-period">Currently learning</p>
+            <h2 class="journey-title">Backend Development</h2>
+            <p class="journey-text">
+              Diving into Node.js, APIs, and SQL to understand the server side of the stack —
+              how data is stored, queried, and served to the frontend.
+            </p>
+          </article>
+
+          <!-- 7 -->
+          <article class="journey-item reveal">
+            <p class="journey-period">Next up</p>
+            <h2 class="journey-title">Future Goals</h2>
+            <p class="journey-text">
+              Continue with Java and Python, ship full-stack applications end to end, deploy
+              projects with GitHub Pages and beyond, and contribute to open source — growing
+              into a well-rounded software developer.
+            </p>
+          </article>
+        </div>
+
+        <div class="reveal" style="margin-top: 48px; display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="projects.html" class="btn btn-primary">See the Results</a>
+          <a href="skills.html" class="btn btn-outline">View My Skills</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Yusuf Xasan. Built with HTML, CSS &amp; JavaScript.</p>
+      <a href="#top" class="back-to-top" aria-label="Back to top">↑ Top</a>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
