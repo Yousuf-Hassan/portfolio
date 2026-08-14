@@ -43,3 +43,38 @@ document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el))
 
 /* ---------- Footer year ---------- */
 document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ---------- Hero typed roles ---------- */
+const roles = ['Computer Science Student', 'Web Developer', 'Frontend Enthusiast', 'Lifelong Learner'];
+const typedEl = document.getElementById('hero-typed');
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeRoles() {
+  const current = roles[roleIndex];
+  const speed = isDeleting ? 45 : 90;
+
+  if (isDeleting) {
+    charIndex -= 1;
+  } else {
+    charIndex += 1;
+  }
+
+  typedEl.textContent = current.slice(0, charIndex);
+
+  if (!isDeleting && charIndex === current.length) {
+    isDeleting = true;
+    setTimeout(typeRoles, 1800);
+    return;
+  }
+
+  if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    roleIndex = (roleIndex + 1) % roles.length;
+  }
+
+  setTimeout(typeRoles, speed);
+}
+
+typeRoles();

@@ -46,8 +46,59 @@
     <!-- ========== HERO ========== -->
     <section id="home" class="hero section">
       <div class="container hero-grid">
-        <!-- hero content filled in feature/hero-about -->
-        <div class="hero-content" id="hero-content"></div>
+        <div class="hero-content">
+          <p class="hero-eyebrow reveal">Hi, my name is</p>
+
+          <h1 class="hero-name reveal">Yusuf Xasan</h1>
+
+          <p class="hero-role reveal">
+            I'm a <span class="hero-typed" id="hero-typed">Computer Science Student</span>
+          </p>
+
+          <p class="hero-desc reveal">
+            Computer Science student at the University of Hargeisa, passionate about building
+            clean, responsive, and user-friendly web applications. Currently growing my skills in
+            full-stack development with HTML, CSS, JavaScript, and Git &amp; GitHub.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+
+          <div class="hero-social reveal">
+            <!-- GitHub: https://github.com/Yousuf-Hassan -->
+            <a href="https://github.com/Yousuf-Hassan" target="_blank" rel="noopener noreferrer"
+               class="social-link" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .31.21.67.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+            </a>
+            <!-- LinkedIn: placeholder profile link -->
+            <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer"
+               class="social-link" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.55V9h3.57v11.45Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Decorative terminal card -->
+        <div class="hero-terminal reveal" aria-hidden="true">
+          <div class="terminal-bar">
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <span class="terminal-title">yusuf@dev: ~</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="t-prompt">yusuf@dev:~$</span> whoami</p>
+            <p class="t-out">student · developer · lifelong learner</p>
+            <p><span class="t-prompt">yusuf@dev:~$</span> cat interests.txt</p>
+            <p class="t-out">web development</p>
+            <p class="t-out">clean UI design</p>
+            <p class="t-out">git &amp; open source</p>
+            <p class="t-out">problem solving</p>
+            <p><span class="t-prompt">yusuf@dev:~$</span> <span class="t-cursor">▊</span></p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -55,8 +106,53 @@
     <section id="about" class="about section">
       <div class="container">
         <h2 class="section-title reveal">About Me</h2>
-        <!-- about content filled in feature/hero-about -->
-        <div class="about-grid" id="about-content"></div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a passionate <strong>Computer Science student</strong> at the
+              <strong>University of Hargeisa — Faculty of Engineering and Computing</strong>, with a
+              strong interest in full-stack web development, programming, and building software that
+              is both functional and enjoyable to use.
+            </p>
+            <p>
+              I enjoy creating responsive, user-friendly web applications with HTML, CSS, and
+              JavaScript, and I'm actively learning the backend side of the stack — Node.js and SQL —
+              along with Java and Python. I also use Git and GitHub every day to manage my code and
+              collaborate on projects.
+            </p>
+            <p>
+              My goal is to grow into a well-rounded developer who can design clean interfaces,
+              build solid systems, and keep learning something new every week.
+            </p>
+          </div>
+
+          <aside class="about-card reveal">
+            <h3 class="about-card-title">Quick Facts</h3>
+            <ul class="facts-list">
+              <li>
+                <span class="fact-label">Name</span>
+                <span class="fact-value">Yusuf Xasan</span>
+              </li>
+              <li>
+                <span class="fact-label">Location</span>
+                <span class="fact-value">Hargeisa, Somaliland</span>
+              </li>
+              <li>
+                <span class="fact-label">Education</span>
+                <span class="fact-value">B.Sc. Computer Science (in progress)</span>
+              </li>
+              <li>
+                <span class="fact-label">Focus</span>
+                <span class="fact-value">Full-stack Web Development</span>
+              </li>
+              <li>
+                <span class="fact-label">Email</span>
+                <span class="fact-value">yusuf.jeeh@gmail.com</span>
+              </li>
+            </ul>
+          </aside>
+        </div>
       </div>
     </section>
 
