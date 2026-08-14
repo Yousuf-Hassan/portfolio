@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Skills of Yusuf Xasan — frontend, backend, programming, database, and tools.">
+  <meta name="author" content="Yusuf Xasan">
+  <title>Skills — Yusuf Xasan</title>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%238b5cf6'/%3E%3Ctext x='50' y='70' font-size='55' font-family='monospace' font-weight='bold' text-anchor='middle' fill='white'%3EYX%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="../index.html" class="nav-logo" aria-label="Yusuf Xasan — home">YX<span class="nav-logo-dot">.</span></a>
+
+      <ul class="nav-list" id="nav-list">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link active" aria-current="page">Skills</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="journey.html" class="nav-link">Journey</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="contact.html" class="btn btn-primary nav-cta">Hire Me</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-list">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page hero -->
+    <section class="page-hero" id="top">
+      <div class="container page-hero-inner">
+        <p class="page-kicker reveal">Skills</p>
+        <h1 class="page-hero-title reveal">My toolkit</h1>
+        <p class="page-hero-sub reveal">
+          The technologies I build with today and the ones I'm growing into. Everything here
+          is organized by the role it plays in my workflow.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section">
+      <div class="container">
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <article class="skill-card reveal">
+            <div class="skill-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg>
+            </div>
+            <h3 class="skill-card-title">Frontend</h3>
+            <p class="skill-card-text">
+              Everything the user sees and touches. I focus on semantic markup, modern layout,
+              and accessible, responsive interfaces.
+            </p>
+            <ul class="skill-tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript (ES6+)</li>
+              <li>Responsive Design</li>
+              <li>Accessibility</li>
+            </ul>
+          </article>
+
+          <!-- Backend -->
+          <article class="skill-card reveal">
+            <div class="skill-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2 3 22M3 2l18 20"/></svg>
+            </div>
+            <h3 class="skill-card-title">Backend</h3>
+            <p class="skill-card-text">
+              The logic behind the interface. I'm learning how servers, APIs, and data flow
+              together to power applications.
+            </p>
+            <ul class="skill-tags">
+              <li>Node.js <span class="tag-note">(learning)</span></li>
+              <li>APIs <span class="tag-note">(learning)</span></li>
+              <li>PHP</li>
+            </ul>
+          </article>
+
+          <!-- Programming -->
+          <article class="skill-card reveal">
+            <div class="skill-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-5 6 5 6M16 6l5 6-5 6"/></svg>
+            </div>
+            <h3 class="skill-card-title">Programming</h3>
+            <p class="skill-card-text">
+              General-purpose languages that strengthen my fundamentals: logic, algorithms,
+              and problem solving beyond the browser.
+            </p>
+            <ul class="skill-tags">
+              <li>Java <span class="tag-note">(learning)</span></li>
+              <li>Python <span class="tag-note">(learning)</span></li>
+            </ul>
+          </article>
+
+          <!-- Database -->
+          <article class="skill-card reveal">
+            <div class="skill-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg>
+            </div>
+            <h3 class="skill-card-title">Database</h3>
+            <p class="skill-card-text">
+              Storing, querying, and organizing data with relational databases — the backbone
+              of most real-world applications.
+            </p>
+            <ul class="skill-tags">
+              <li>SQL</li>
+              <li>MySQL</li>
+              <li>PostgreSQL <span class="tag-note">(learning)</span></li>
+            </ul>
+          </article>
+
+          <!-- Tools -->
+          <article class="skill-card reveal">
+            <div class="skill-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17v-5a8 8 0 0 1 16 0v5"/><path d="M2 17h20v3H2z"/></svg>
+            </div>
+            <h3 class="skill-card-title">Tools</h3>
+            <p class="skill-card-text">
+              The daily workflow: version control, collaboration, and the editor I spend my
+              hours in.
+            </p>
+            <ul class="skill-tags">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
+              <li>Command Line</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Currently learning strip -->
+        <div class="card reveal" style="margin-top: 40px; text-align: center;">
+          <h3 style="font-size: 1.15rem; margin-bottom: 10px;">Currently Exploring</h3>
+          <p style="color: var(--text-muted); max-width: 560px; margin-inline: auto;">
+            Right now I'm focused on <strong style="color: var(--text);">Node.js and SQL</strong> to
+            complete my full-stack picture, with <strong style="color: var(--text);">Java and Python</strong>
+            next on the list — building small projects with each one as I go.
+          </p>
+          <div style="margin-top: 20px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+            <a href="projects.html" class="btn btn-primary btn-sm">See the Projects</a>
+            <a href="journey.html" class="btn btn-outline btn-sm">How I'm Learning</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Yusuf Xasan. Built with HTML, CSS &amp; JavaScript.</p>
+      <a href="#top" class="back-to-top" aria-label="Back to top">↑ Top</a>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
