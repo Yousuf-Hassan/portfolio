@@ -37,11 +37,18 @@ window.addEventListener('scroll', () => {
   header.classList.toggle('scrolled', window.scrollY > 10);
 }, { passive: true });
 
-/* ---------- Scroll-spy: highlight active nav link ---------- */
+/* ---------- Scroll-spy: highlight active nav link (home only) ---------- */
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('main section[id]');
 
-if (navLinks.length && sections.length) {
+// Only run scroll-spy when the navigation contains in-page anchors (the home
+// page). On subpages the active link is set in the markup and must stay put;
+// otherwise the spy would strip the highlighted state from every link.
+const hasAnchorLinks = Array.from(navLinks).some((link) =>
+  link.getAttribute('href').startsWith('#')
+);
+
+if (hasAnchorLinks && navLinks.length && sections.length) {
   const spyObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
