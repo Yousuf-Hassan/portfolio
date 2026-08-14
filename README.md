@@ -65,30 +65,57 @@ python -m http.server 8000
 
 ## 🌐 Deployment (GitHub Pages)
 
-The site deploys with **GitHub Pages**:
+The site deploys automatically with **GitHub Pages + GitHub Actions** — no manual
+setup required:
 
-1. Push the repository to GitHub.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select the `main` branch and the `/ (root)` folder, then **Save**.
-5. Your portfolio will be live at `https://<username>.github.io/<repository>/`.
+1. Push to `main`.
+2. The `Deploy to GitHub Pages` workflow (see `.github/workflows/deploy-pages.yml`)
+   builds and deploys the site.
+3. Your portfolio is live at `https://yousuf-hassan.github.io/portfolio/`.
 
-## 🔀 Git Workflow
+You can also trigger a deployment manually from **Actions → Deploy to GitHub Pages →
+Run workflow**.
 
-This repository demonstrates a complete, professional Git workflow:
+## 🔀 Git & GitHub Workflow
+
+This repository demonstrates a complete, professional Git & GitHub workflow — the
+core deliverable of the Capstone:
 
 - `main` — production-ready releases only (tagged, e.g. `v1.0.0`, `v1.1.0`)
 - `develop` — integration branch where finished features are merged
 - `feature/*` — one branch per feature (e.g. `feature/multi-page-dark-design`),
   merged with `--no-ff`
 - `hotfix/*` — urgent fixes branched from `main` and merged back to `main` and `develop`
+- **Issues** — work items tracked on GitHub (e.g. CI/CD, documentation)
+- **Pull Requests** — every change lands via a PR, with review comments
+- **`Fixes #`** — commits and PRs reference the issue they resolve, so GitHub
+  auto-closes them on merge
+- **GitHub Actions** — CI/CD pipeline deploys the site to GitHub Pages on push to `main`
+- **Release tags** — `v1.0.0` … `v1.2.0` mark each production release
 - Conventional, meaningful commit messages throughout
 
 ```
-main     ●───────────────● v1.0.0 ────● v1.0.1 ────● v1.1.0 (multi-page dark theme)
-develop  ──●──●──●──●──●──●────────────●────────────●
-             feature/...            hotfix/       feature/multi-page-dark-design
+main     ●───────────────● v1.0.0 ────● v1.0.1 ────● v1.1.0 ────● v1.2.0 (CI/CD)
+develop  ──●──●──●──●──●──●────────────●────────────●────────────●
+             feature/...            hotfix/       feature/...   feature/ci-and-workflow
 ```
+
+### Branching model
+
+```text
+feature/* ──► develop ──► main  (features integrate on develop, release via PR)
+hotfix/* ──────────────► main ──► develop (urgent fixes branch from main)
+```
+
+### Release history
+
+| Tag      | Description                                        |
+| -------- | -------------------------------------------------- |
+| `v1.0.0` | Initial single-page portfolio                       |
+| `v1.0.1` | Hotfix: no-JS fallback                              |
+| `v1.1.0` | Multi-page black/dark redesign                      |
+| `v1.1.1` | Hotfix: active nav state on subpages                |
+| `v1.2.0` | CI/CD: GitHub Actions + GitHub Pages deployment     |
 
 ## 📝 Notes & Placeholders
 
