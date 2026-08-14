@@ -78,3 +78,49 @@ function typeRoles() {
 }
 
 typeRoles();
+
+/* ---------- Contact form (front-end validation) ---------- */
+const contactForm = document.getElementById('contact-form');
+const formSuccess = document.getElementById('form-success');
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+function setFieldError(input, hasError) {
+  const errorEl = document.querySelector(`[data-error-for="${input.name}"]`);
+  input.classList.toggle('invalid', hasError);
+  if (errorEl) errorEl.classList.toggle('show', hasError);
+}
+
+function validateField(input) {
+  let valid = input.value.trim().length > 0;
+  if (valid && input.type === 'email') {
+    valid = EMAIL_RE.test(input.value.trim());
+  }
+  setFieldError(input, !valid);
+  return valid;
+}
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const fields = Array.from(contactForm.querySelectorAll('.form-input'));
+  let allValid = true;
+
+  fields.forEach((field) => {
+    if (!validateField(field)) allValid = false;
+  });
+
+  if (allValid) {
+    formSuccess.hidden = false;
+    contactForm.reset();
+    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+});
+
+// Live validation feedback
+contactForm.querySelectorAll('.form-input').forEach((field) => {
+  field.addEventListener('blur', () => validateField(field));
+  field.addEventListener('input', () => {
+    if (field.classList.contains('invalid')) validateField(field);
+  });
+});
