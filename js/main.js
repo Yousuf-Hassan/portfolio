@@ -5,6 +5,10 @@
 
 'use strict';
 
+// Mark that JavaScript is available so styles that depend on it (e.g. reveal)
+// only apply when the page is enhanced. Content stays visible without JS.
+document.documentElement.classList.add('js');
+
 /* ---------- Mobile navigation toggle ---------- */
 const navToggle = document.getElementById('nav-toggle');
 const navList = document.getElementById('nav-list');
