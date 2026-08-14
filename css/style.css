@@ -911,3 +911,60 @@ a.contact-value:hover {
     gap: 0;
   }
 }
+
+/* =========================================================
+   Polish: alternating backgrounds, focus, selection
+   ========================================================= */
+
+.about,
+.projects,
+.contact {
+  background: var(--bg-soft);
+}
+
+::selection {
+  background: rgba(99, 102, 241, 0.5);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface-2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .hero-typed::after,
+  .t-cursor {
+    animation: none;
+  }
+}
