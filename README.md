@@ -1,4 +1,4 @@
-# Yusuf Xasan — Developer Portfolio
+# Yousuf H. Osman — Developer Portfolio
 
 A modern, **professional black/dark developer portfolio** built from scratch with
 **HTML5**, **CSS3**, and **vanilla JavaScript** — no frameworks, no build step. This is
